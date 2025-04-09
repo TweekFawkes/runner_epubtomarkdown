@@ -1,0 +1,28 @@
+runner:
+  name: Universal Document Converter
+  description: Convert Documents to PDF, HTML, and more
+  version: 0.0.1
+
+build:
+  commands: |
+    echo "START: Building the runner"
+    python3 -m pip install -U -r requirements.txt
+    echo "END: Building the runner"
+
+webform:
+  - name: input_file
+    prompt: Input File
+    type: file
+  - name: input_format
+    prompt: Input Format
+    type: text
+  - name: output_format
+    prompt: Output Format
+    type: text
+  - name: output_filename
+    prompt: Output Filename
+    type: text
+
+launch:
+  type: python
+  command: app.py --epub_file ${input_file}
