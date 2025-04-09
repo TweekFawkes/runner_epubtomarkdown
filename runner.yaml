@@ -6,6 +6,8 @@ runner:
 build:
   commands: |
     echo "START: Building the runner"
+    apt-get update
+    apt-get install -y pandoc
     python3 -m pip install -U -r requirements.txt
     echo "END: Building the runner"
 
