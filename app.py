@@ -1,5 +1,6 @@
 import os
 import sys
+import argparse
 
 ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ### --- ###
 
@@ -65,7 +66,7 @@ def convert_epub_to_md_pypandoc(epub_filepath, md_filepath):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--epub_file', required=True, help='Input image file name (SVG) from inputs directory')
+    parser.add_argument('--epub_file', required=True, help='Input EPUB file from inputs directory')
     args = parser.parse_args()
     
     # Validate file extension
