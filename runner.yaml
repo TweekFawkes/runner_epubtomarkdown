@@ -13,15 +13,6 @@ webform:
   - name: input_file
     prompt: Input File
     type: file
-  - name: input_format
-    prompt: Input Format
-    type: text
-  - name: output_format
-    prompt: Output Format
-    type: text
-  - name: output_filename
-    prompt: Output Filename
-    type: text
 
 launch:
   type: python
