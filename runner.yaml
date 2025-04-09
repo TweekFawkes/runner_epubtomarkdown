@@ -1,6 +1,6 @@
 runner:
-  name: Universal Document Converter
-  description: Convert Documents to PDF, HTML, and more
+  name: EPUB to Markdown Converter
+  description: Convert EPUB files to Markdown
   version: 0.0.1
 
 build:
